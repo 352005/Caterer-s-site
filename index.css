@@ -1,0 +1,180 @@
+body{
+  width: 97%
+}
+
+#logo{
+  width: 71%;
+  height: 71%;
+  margin: -1.2em 12%;
+}
+
+#logo img{
+  max-width: 100%;
+}
+
+#intro .introText{
+  font-family: "ubuntu", sans-serif;
+  text-align: center;
+  font-weight: 200;
+}
+
+@media all and (min-width: 600px){
+#intro .introText{
+font-size:3em;
+}
+}
+
+#intro .introBtn{
+  margin: 1.2em 12%;
+}
+
+@media all and (min-width: 600px){
+#intro .introBtn{
+margin: 1.2em 30%;
+}
+}
+
+.introBtn .contact, .introBtn .gallery, footer .gallery{
+  width: 120px;
+  height: 37px;
+  border-radius: 20px;
+  border: none;
+  outline: none;
+}
+
+@media all and (min-width: 600px){
+.introBtn .contact, .introBtn .gallery, footer .gallery{
+width: 40%;
+height: 40px;
+}
+}
+
+.introBtn .contact{
+  margin-left: 3%;
+  background: rgb(100, 0, 0);
+}
+
+.introBtn .gallery, footer .gallery{
+  margin-left: 3%;
+  background: rgb(0, 50, 0);
+}
+
+.introBtn .contact a{
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  font-size: 1.4em;
+  -webkit-tap-highlight-color: transparent;
+  font-family: "PT Sans Narrow",sans-serif;
+}
+
+.introBtn .gallery a, footer .gallery a{
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  font-size: 1.2em;
+  -webkit-tap-highlight-color: transparent;
+  font-family: "PT Sans Narrow",sans-serif;
+}
+
+#about, #service{
+  margin-top: 90px;
+}
+
+h2{
+  font-family: "comfortaa", sans-serif;
+}
+
+#about .abtText{
+  font-family: sans-serif;
+  font-weight: 300;
+  text-align: justify;
+}
+
+.list li{
+  font-weight: bold;
+  font-family: "Saira", sans-serif;
+  font-style: italic;
+}
+
+.list p{
+  font-family: "Advent pro", sans-serif;
+  font-weight: 300;
+}
+
+footer{
+  width: 100%;
+  margin-top: 100px;
+  color: rgba(30, 30, 33, 1);
+}
+
+footer p{
+  text-align: center;
+}
+
+footer .whatsapp, footer .instagram, footer .email{
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
+  margin-top: 20px;
+}
+
+.whatsapp img, .instagram img, .email img{
+  max-width: 100%;
+}
+
+footer ul{
+  display: grid;
+  grid-template-rows: auto auto;
+  grid-template-columns: repeat(2, 10rem);
+  margin-left: -30px;
+}
+
+footer ul li{
+  list-style-type: none;
+  text-align: left;
+}
+
+.list1{
+  grid-row: 1;
+  grid-column: 1;
+  display: flex;
+  flex-direction: row;
+
+}
+
+.list2{
+  grid-row: 1;
+  grid-column: 2;
+  display: flex;
+  flex-direction: row;
+  margin-left: 30px;
+  
+}
+
+.list3{
+  grid-row: 2;
+  grid-column: 1;
+  display: flex;
+  flex-direction: row;
+  width: 18rem;
+}
+
+.list1 a{
+  color: rgb(0, 100, 0);
+}
+
+.list2 a{
+  color: rgb(0, 0, 150);
+}
+
+.list3 a{
+  color: rgb(100, 0, 0);
+}
+
+footer .gallery{
+  margin-left: 30%;
+  background: rgba(0, 100, 0, .3);
+}
+
+footer .gallery a{
+  color: #000;
+}

@@ -1,0 +1,253 @@
+body{
+  width: 97%;
+}
+
+ #menu{
+      position: fixed;
+      display: block;
+      width: 90%;
+      background: #ffffff;
+      color: #000000;
+      -webkit-border-radius: 5px;
+      -moz-border-radius: 5px;
+      border-radius: 5px;
+      left: 15px;
+     transform: translateY(-1000px);
+      z-index: 100;
+      box-shadow: 0 0 20px gray;
+      transition: all .5s;
+      overflow-y: auto;
+      max-height: 500px;
+      overflow-x: hidden;
+    }
+    
+  body #menu.down{
+      transform: translateY(70px);
+    }
+    
+  .menulist{
+    margin-left: 120px;
+  }
+    
+  .menulist ul{
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    margin-left: -30px;
+  }
+  
+    .menulist ul li{
+      margin-bottom: 10px;
+      margin-top: 10px;
+      font-family: "ubuntu", sans-serif;
+    }
+    
+    .menulist ul li a{
+      display: inline-flex;
+      position: relative;
+      color: black;
+      font-family: "ubuntu", sans-serif;
+    }
+    
+  #logo{
+  width: 71%;
+  height: 71%;
+  margin: -1.2em 12%;
+}
+
+#logo img{
+  max-width: 100%;
+}
+
+#menu .contactlist{
+      font-weight: bold;
+      color: rgba(0,0,0,.75);
+      font-size: 16px;
+      
+    }
+    
+.menulist .contactSublist{
+     background-color: rgba(192, 192, 192,0.0);
+     width: 80%;
+     margin: 5px 10px;
+     padding: 13px;
+     text-align: left;
+     border-radius: 5px;
+     overflow: hidden;
+     max-height: 0;
+     transform: translateX(50rem);
+   }
+   
+#menu .contactSublist.down{
+     background-color: rgba(192, 192, 192, 0.2);
+     max-height: 500px;
+     margin: 0 -50px;
+     transform: translateX(0rem);
+   }
+  
+#nav{
+  position: fixed;
+  width: 100%;
+  height: 70px;
+  margin: -20px 0;
+  background: rgb(255, 255, 255);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.logo{
+  width: 200px;
+  height: 50px;
+  margin-top: 0px;
+  margin-left: -30px;
+}
+
+.logo img{
+  max-width: 100%;
+}
+
+ .menubtn{
+    width: 28px;
+    height: 28px;
+    background-image: url("icon-hamburger.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 18px;
+  }
+  #nav .menubtn.change{
+    width: 23px;
+    height: 23px;
+    background-image: url("icon-close.svg");
+  }
+  
+#content{
+  padding-top: 50px;
+}
+
+#content .welcome{
+  text-align: center;
+  font-size: 18px;
+  font-family: "Marck Script",cursive;
+}
+
+#content .welcomePara{
+  text-align: center;
+  font-size: 17px;
+  font-family: "Caudex",serif;
+}
+
+#gallery{
+  width: 90%;
+}
+
+#gallery .header{
+  font-size: 25px;
+  text-align: center;
+  font-family: "Xanh Mono", monospace;
+}
+
+#gallery .lists, .sublists{
+  font-family: "Zen loop", cursive;
+  font-size: 22px;
+  margin: 0px 2px;
+}
+
+.sublists{
+  font-size: 20px;
+}
+
+#gallery .lists:not(:first-child){
+  margin-top: 30px;
+}
+
+.cakes, .annivCakes, .wedcakes, .cupcakes, .othercakes, .snacks, .events, .cookings{
+  display: grid;
+  grid-template-columns: 150px 150px;
+  grid-auto-rows: 200px;
+  column-gap: 10px;
+  row-gap: 30px;
+  margin-top: 20px;
+}
+
+.annivCakes{
+  row-gap: 20px;
+  grid-auto-rows: 180px;
+}
+
+.wedcakes .img1, .cupcakes .img1, .cupcakes .img2{
+  height: 130px;
+  width: 130px;
+}
+
+.wedcakes .img4{
+  height: 180px;
+  width: 180px;
+}
+
+.img1, .img2, .img3, .img5, .img6, .img7, .img8, .img9, .img10{
+  width: 150px;
+  height: 150px;
+}
+
+/*.img5{
+  margin-bottom: 50px;
+}
+*/
+.img4{
+  width: 130px;
+  height: 120px;
+}
+
+
+.img1 img, .img2 img, .img3 img, .img4 img, .img5 img, .img6 img, .img7 img, .img8 img, .img9 img, .img10 img{
+  max-width: 100%;
+  border-radius: 20px;
+}
+
+.cupcakes .img5{
+  margin: -30px 0 30px 0;
+}
+
+.cupcakes .img6{
+  margin: -60px 0 60px 0;
+}
+
+.snacks .img5, .snacks .img6{
+  margin-top: -60px;
+}
+
+.snacks .img7, .snacks .img8, .snacks .img9, .snacks .img10{
+  margin-top: -130px;
+}
+
+.snacks .img8{
+  width: 130px;
+  height: 130px;
+}
+
+.snacks{
+  margin-bottom: -180px;
+}
+
+.events{
+  row-gap: 1px;
+}
+
+.events .img5{
+  margin-top: -30px;
+}
+
+footer{
+  margin-top: 70px;
+  width: 95%;
+  text-align: center;
+}
+
+.whatsapp, .instagram, .email{
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
+}
+
